@@ -18,5 +18,6 @@ RUN mkdir /kafka
 # CMD systemctl start kafka
 RUN pwd
 COPY executable.sh /executable.sh
+COPY kafka_2.12-2.8.0 /kafka
 RUN chmod +x /executable.sh
 CMD /executable.sh
